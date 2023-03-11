@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;500;800&display=swap');
+
+body{
+    font-family: var(--primery-fontfont);
+}
+*{
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+ol,ul{list-style: none;}
+
+a{text-decoration: none;}
+
+:root{
+--primery-fontfont:'Raleway', sans-serif;
+
+--secondery-font:'Open Sans', sans-serif;
+--primery-color:#de4644;
+}
+
+.container{width:1170px;
+margin: auto;
+}
+
+.row{display: flex;
+flex-wrap: wrap;
+}
+
+/* header nav bar starty */
+
+nav{border: #ffffff;}
+.align-center{align-items: center;}
+nav .logo{width: 20%;
+padding: 30px;
+}
+
+nav .menu{width: 60%;
+   text-align: center;
+}
+
+nav .menu ul li{display: inline-block;
+    
+   
+}
+nav .menu ul li a{
+    color: #222222;
+    padding:47px 10px ;
+    font-size: 16px;
+    font-weight: 500; 
+    position: relative;
+}
+
+nav .menu ul li a::before{
+    content:'' ;
+    width: 0;
+    height: 2px;
+    background-color: #de4644;
+    position: absolute;
+    bottom: 39px;
+    left: 9px;
+    transition: 0.7s;
+
+}
+nav .menu ul li a::after{
+    content:'' ;
+    width: 0;
+    height: 2px;
+    background-color: #de4644;
+    position: absolute;
+    bottom: 34px;
+    left: 9px;
+    transition: 0.7s;
+
+}
+nav .menu ul li a:hover::after{
+    width: 25%;
+}
+
+nav .menu ul li a:hover::before{
+    width: 50%;
+}
+
+
+
+
+
+nav .sha{width: 20%;}
